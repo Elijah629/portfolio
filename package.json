@@ -6,12 +6,14 @@
 		"dev": "next dev --turbo --show-all",
 		"build": "next build",
 		"start": "next start",
-		"lint": "next lint"
+		"lint:eslint": "npx eslint . --fix",
+		"lint:prettier": "npx prettier . --write",
+		"lint:stylelint": "npx stylelint \"**/*.css\" --fix",
+		"lint": "concurrently \"npm:lint:*\""
 	},
 	"dependencies": {
 		"@headlessui/react": "^1.7.12",
 		"@next/font": "^13.2.1",
-		"ethers": "^6.0.8",
 		"framer-motion": "^10.0.0",
 		"next": "^13.2.1",
 		"react": "18.2.0",
@@ -31,6 +33,8 @@
 		"postcss": "^8.4.21",
 		"prettier": "^2.8.4",
 		"prettier-plugin-tailwindcss": "^0.2.3",
+		"stylelint": "^15.2.0",
+		"stylelint-config-standard": "^30.0.1",
 		"tailwindcss": "^3.2.7",
 		"typescript": "^4.9.5"
 	}

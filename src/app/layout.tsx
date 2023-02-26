@@ -1,6 +1,4 @@
 import "./globals.css";
-import { Cursor } from "@/components/Cursor";
-
 import { Cousine } from "@next/font/google";
 import { Footer } from "@/components/interface/Footer";
 

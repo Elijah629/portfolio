@@ -1,6 +1,5 @@
 extends:
     - stylelint-config-standard
-    - stylelint-config-prettier
 rules:
     declaration-block-no-duplicate-properties: true
     at-rule-no-unknown:
@@ -15,5 +14,3 @@ rules:
         - true
         - ignoreFunctions:
               - theme
-    declaration-block-trailing-semicolon: null
-    no-descending-specificity: null

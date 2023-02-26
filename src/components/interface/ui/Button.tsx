@@ -10,9 +10,7 @@ export const Button: React.FunctionComponent<
 			{...{
 				...props,
 				...{
-					className:
-						"theme-interactable " +
-						(props.className ?? "")
+					className: "theme-interactable " + (props.className ?? "")
 				}
 			}}
 			data-interactable>
