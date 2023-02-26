@@ -45,18 +45,7 @@
 	}
 }
 
-/* Make NextJS element full page size */
-
-/* stylelint-disable-next-line selector-id-pattern */
-#__next {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-}
-
-/* OK because all inputs WILL highight on focus or hover */
+/* a11y is fine because selectable elements will glow */
 
 *:focus {
 	outline: none;
