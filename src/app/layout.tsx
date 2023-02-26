@@ -1,5 +1,5 @@
 import "./globals.css";
-import { Cousine } from "@next/font/google";
+import { Cousine } from "next/font/google";
 import { Footer } from "@/components/interface/Footer";
 
 const cousine = Cousine({
